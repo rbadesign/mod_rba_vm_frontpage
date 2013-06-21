@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="2.5"
+	client="site"
+	method="upgrade">
+	<name>RBA VirtueMart Frontpage</name>
+	<creationDate>03/29/2013</creationDate>
+	<author>RBA DESIGN INTERNATIONAL LLC</author>
+	<authorEmail>protopopov@narod.ru</authorEmail>
+	<authorUrl>http://rbadesign.us</authorUrl>
+	<copyright>RBA DESIGN INTERNATIONAL LLC</copyright>
+	<license>Commercial</license>
+	<version>1.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>VirtueMart Category Frontpage displays categories and products in columns</description>
+
+	<!-- Main File Copy Section -->
+	<files>
+		<filename module="mod_rba_vm_frontpage">mod_rba_vm_frontpage.php</filename>
+		<filename module="mod_rba_vm_frontpage">mod_rba_vm_frontpage.xml</filename>
+		<filename module="mod_rba_vm_frontpage">assets/css/frontpage.css</filename>
+		<filename module="mod_rba_vm_frontpage">assets/css/index.html</filename>
+		<filename module="mod_rba_vm_frontpage">assets/index.html</filename>
+	</files>
+
+	<!-- Language -->
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_rba_vm_frontpage.ini</language>
+		<language tag="ru-RU">language/ru-RU/ru-RU.mod_rba_vm_frontpage.ini</language>
+	</languages>
+
+	<!-- Only Development - copy ./front, ./language, ./other to admin area -->
+	<files>
+		<filename>language/en-GB/en-GB.mod_rba_vm_frontpage.ini</filename>
+		<filename>language/ru-RU/ru-RU.mod_rba_vm_frontpage.ini</filename>
+		<filename>other/install_xml.php</filename>
+	</files>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="CUSTOM_OUTPUT" addfieldpath="/modules/mod_rba_vm_frontpage/admin">
+				<field name="columns_num" type="text" default="3" label="Number of columns" description="Number of columns DESC" />
+			</fieldset>
+			<fieldset name="GENERAL_SETTINGS" addfieldpath="/modules/mod_rba_vm_frontpage/admin">
+				<field name="moduleclass_sfx" type="text" default=""
+					label="Module Class Suffix"
+					description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+			</fieldset>
+		
+		</fields>
+	</config>
+
+</extension>

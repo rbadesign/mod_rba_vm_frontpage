@@ -1,0 +1,67 @@
+/* CSS Document */
+
+div.rba_vm_frontpage {
+	color: #FFF;
+	background-color: #000;
+	text-align: justify;
+}
+div.rba_vm_frontpage div.frontpage-column {
+	display: inline-block;
+	position: relative;
+	margin: 0;
+	background-color: #000;
+	padding-top: 4px;
+	padding-right: 0px;
+	padding-bottom: 4px;
+	padding-left: 0px;
+	vertical-align: top;
+}
+div.frontpage-column a {
+	display: block;
+	position: relative;
+	margin: 0;
+	text-decoration: none;
+	padding-top: 0px;
+	padding-right: 4px;
+	padding-bottom: 0px;
+	padding-left: 4px;
+}
+div.frontpage-column div.category {
+	display: block;
+	color: #FFF;
+	background-color: #06F;
+	position: relative;
+	margin: 0;
+	padding: 2px;
+	text-transform: uppercase;
+}
+div.frontpage-column div.product {
+	display: block;
+	position: relative;
+	color: #FFF;
+	background-color: #000;
+	margin: 0;
+	padding: 2px;
+}
+
+
+div.frontpage-column div.product-price {
+	float:right;
+	position: relative;
+	margin: 0;
+}
+
+div.frontpage-column span.category-name {
+	position: relative;
+	margin: 0;
+}
+div.frontpage-column span.product-name {
+	position: relative;
+	margin: 0;
+}
+div.product-price span.product-price-main {
+}
+div.product-price span.product-price-fraction {
+	font-size: xx-small;
+}
+
